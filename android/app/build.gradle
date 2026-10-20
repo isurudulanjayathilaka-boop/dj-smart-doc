@@ -1,0 +1,23 @@
+plugins {
+    id "com.android.application"
+    id "kotlin-android"
+}
+
+android {
+    namespace "com.example.dj_smart_doc"
+    compileSdkVersion 34
+
+    defaultConfig {
+        applicationId "com.example.dj_smart_doc"
+        minSdkVersion 21
+        targetSdkVersion 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+     buildTypes {
+        release {
+            signingConfig signingConfigs.debug
+        }
+    }
+}
